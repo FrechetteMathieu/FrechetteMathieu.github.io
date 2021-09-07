@@ -1,0 +1,47 @@
+
+/* Modifiez le titre de la page « Exercice sur les sélecteurs CSS »
+   - La couleur du texte doit être rouge.
+   - La taille de la police doit être 3 fois plus grande.
+   - Le texte doit être centré
+ */
+#titrePage {
+    color: red;
+    font-size: 3em;
+    text-align: center;
+}
+
+/* Pour tous les paragraphes
+   - La première lettre doit être 2 fois plus grande que le reste du 
+     texte et en italique.
+   - L’alignement du texte doit être « justifié ».
+*/
+p {
+    text-align: justify;
+}
+p::first-letter {
+    font-size: 2em;
+}
+
+/* Pour le premier paragraphe
+   - La première lettre doit être de couleur mauve.
+*/
+#paragraphe1::first-letter {
+    color:purple;
+}
+
+/* Pour les 4 paragraphes suivant de la section article
+   - La première lettre doit être de couleur verte
+*/
+article > p:not(#paragraphe1)::first-letter {
+    color: orange;
+}
+
+/* Quand on survole le titre « Consignes »
+   - La couleur du texte doit changer pour celle de votre choix
+*/
+#titreConsigne:hover {
+    color: darkorange;
+}
+
+
+

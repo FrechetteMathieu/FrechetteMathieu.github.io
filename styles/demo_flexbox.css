@@ -1,0 +1,65 @@
+body {
+    margin: 1em;
+}
+
+#container_entete {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+
+    background-color: mediumblue;
+    margin: -5px;
+}
+
+#container_entete > .item {
+    background-color: lightskyblue;
+    margin: 5px;
+    padding: 5px;
+    flex-grow: 1;
+}
+
+#item_entete_gauche {
+    flex-basis: 70%;
+}
+
+#item_entete_gauche > h1 {
+    padding-left: 10px;
+}
+
+#item_entete_droite {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 25%;
+}
+
+.quote {
+    font-size: 1.25em;
+}
+.quote figcaption,
+.quote blockquote {
+    margin: 1em;
+}
+
+
+
+div {
+    border-radius: 10px;
+}
+
+img {
+    border-radius: 10px;
+}
+
+blockquote::before {
+    content: open-quote;
+  }
+  blockquote::after {
+    content: close-quote;
+  }
+  blockquote {
+    quotes: "“" "”" "‘" "’";
+  }
+
